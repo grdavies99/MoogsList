@@ -1,2 +1,2 @@
 # DormTrooper
-You already know what it is
+Codebase for DormTrooper.co and davies Venture inc.
