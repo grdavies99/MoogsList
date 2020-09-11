@@ -41,20 +41,20 @@
                 <form class="justify-content-center form-block" method="POST" action="sign2.php">
                     <div class="form-group" style="display:none;">
                         <label class="bold"><b>DTID</b></label>
-                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="First Name" value="<?php echo $_COOKIE['DTID']; ?>" name="DTID">
+                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="First Name" value="<?php echo $_COOKIE['DTID']; ?>" name="MoogId">
                     </div>
                     <div class="form-group">
                         <label><b>Username</b></label>
-                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="Username" name="uName">
+                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="Username" name="Uname">
                     </div>
                     
                     <div class="form-group">
                         <label class="bold"><b>Password</b></label>
-                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="Password" name="pass">
+                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="Password" name="Pass">
                     </div>
                     <div class="form-group">
                         <label class="bold"><b>Confirm Password</b></label>
-                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="Re-enter Password" name="repass">
+                        <input class="form-control mr-sm-2 ml-1" type="text" placeholder="Re-enter" name="repass">
                     </div>
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Login </button>
                 </form>
@@ -73,7 +73,7 @@
 
 </body>
 <footer class="">
-    <div class="footer-copyright text-center bg-primary py-3">© 2020 Copyright:
+    <div class="footer-copyright text-center bg-dark py-3">© 2020 Copyright:
         <a href="index.html" class="text-dark">DormTrooper</a>
     </div>
 </footer>

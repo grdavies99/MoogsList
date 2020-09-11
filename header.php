@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="index.html">Dormtrooper</a>
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+    <a class="navbar-brand" href="index.html">MoogsList</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,19 +14,20 @@
             </li>
 
             <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Restaurants</a>
                 <div class="dropdown-menu " aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="buy.php">Buy</a>
-                    <a class="dropdown-item" href="sell.php">Sell</a>
+                    <a class="dropdown-item" href="buy.php">How It Works</a>
+                    <a class="dropdown-item" href="sell.php">Get Involved</a>
                 </div>
             </li>
         </ul>
 
-    </div><?php
+    </div>
+    <?php
     include 'connec.php';
     if (!empty($_SESSION['login_user'])){
         $DTID = $_SESSION['login_user'];
-    $sql = "SELECT * FROM users WHERE DTID=$DTID";
+    $sql = "SELECT * FROM users WHERE MoogID=$DTID";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];

@@ -3,19 +3,28 @@
     session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $DTID = mysqli_real_escape_string($conn, $_POST['DTID']);
-    $Username = mysqli_real_escape_string($conn, $_POST['uName']);
-    $Password = mysqli_real_escape_string($conn, $_POST['pass']);
+    $DTID = mysqli_real_escape_string($conn, $_POST['MoogId']);
+    $Username = mysqli_real_escape_string($conn, $_POST['Uname']);
+    $Password = mysqli_real_escape_string($conn, $_POST['Pass']);
+    $PRenter = mysqli_real_escape_string($conn, $_POST['repass']);
     
-    $sql = "INSERT into passName (DTID, Username, Password) VALUES ('$DTID', '$Username', '$Password')";
+
+    if(strcmp($Password,$PRenter) == 0){
+        
     
-    if($conn->query($sql) === true){
-        header('location: test.php');
+        $sql = "INSERT into passu (MoogId, Uname, Pass) VALUES ('$DTID', '$Username', '$Password')";
+        if($conn->query($sql) === true){
+            header('location: test.php');
+        }
+        else{
+            echo "Error: " . $sql . "<br>" . $conn->error;
+       }
     }
+    
+    
     else{
-         echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-    
+        echo '<script type="text/javascript">alert("Passwords Must Match")</script>';
+        header('signup2.php');}
     
 }
 ?>
