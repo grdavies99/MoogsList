@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <title>Pubcral · Home</title>
+    <title>MoogsList</title>
     
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">

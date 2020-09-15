@@ -59,10 +59,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
-<footer class="">
-    <div class="footer-copyright text-center bg-primary py-3">© 2020 Copyright:
-        <a href="index.html" class="text-dark">DormTrooper</a>
-    </div>
-</footer>
+<?php
+include ("footer.php");
+?>
 
 </html>

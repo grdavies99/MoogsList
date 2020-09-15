@@ -28,11 +28,11 @@
 
     <main role="main" class="container-fluid bg clearfix">
 
-        <div class=" whitebg text-center mt-5 p-3">
-            <h1>DormTrooper: Books with morals</h1>
+        <!-- <div class=" whitebg text-center mt-5 p-3">
+            <h1>This</h1>
             <p class="lead"><b>Going to college already costs too much, your books shouldn't have to. </b></p>
-        </div>
-        <div class="row h-75">
+        </div> -->
+        <div class="row h-100">
         <div class=" whitebg col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto my-auto text-center form p-4">
                     <h1>find out how much your book is worth!</h1>
 <!--        <div class="text-center mt-5 pt-5">-->
