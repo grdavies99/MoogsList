@@ -15,7 +15,7 @@ html {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 .whitebg {
@@ -44,4 +44,24 @@ html {
     display: flex;
     width: 100%;
     align-items: stretch;
+}
+
+@keyframes menu{
+    from{background-color:white;
+    color:darkgray;}
+    to{
+        background-color: #5cb85c;
+        color: white;
+    }
+}
+
+#menuIT:hover{
+    animation-name: menu;
+    animation-duration: .4s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+}
+
+img{
+    width: 100%;
 }

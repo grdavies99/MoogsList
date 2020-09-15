@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
     <a class="navbar-brand" href="index.html">MoogsList</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +33,7 @@
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     // $active = $row['active'];
-        echo '<p class="text-right  my-auto">Welcome Back '.$row['Fname'].'</p>';
+        echo '<p class="text-right text-light my-auto">Welcome Back '.$row['Fname'].'</p>';
     }
     else{
         echo '<p class="text-right  my-auto"><a class="text-light" href="login.php">Login</a> <a class="text-light" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">|</a> <a class="text-light" href="signup.php">Sign Up</a> </p>';
